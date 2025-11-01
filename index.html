@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butter Mellow Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧁 Butter Mellow Bakery</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Freshly Baked Happiness Everyday!</h2>
+    <p>Delight in our handmade cakes, cookies, and pastries baked with love ❤️</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Best Sellers 🍪</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1605470376939-2e8a16d9583c?auto=format&fit=crop&w=800&q=60" alt="Chocolate Cake" />
+        <h3>Chocolate Cake</h3>
+        <p>₹450</p>
+        <button onclick="addToCart('Chocolate Cake', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1599785209798-9f28b9f42a9f?auto=format&fit=crop&w=800&q=60" alt="Cupcake Box" />
+        <h3>Cupcake Box (6pcs)</h3>
+        <p>₹300</p>
+        <button onclick="addToCart('Cupcake Box', 300)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1606755962773-0a26efbf0168?auto=format&fit=crop&w=800&q=60" alt="Strawberry Tart" />
+        <h3>Strawberry Tart</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Strawberry Tart', 250)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1612197527762-8d2f481f1464?auto=format&fit=crop&w=800&q=60" alt="Butter Croissant" />
+        <h3>Butter Croissant</h3>
+        <p>₹150</p>
+        <button onclick="addToCart('Butter Croissant', 150)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1625944229328-79a8d6e4ed67?auto=format&fit=crop&w=800&q=60" alt="Blueberry Muffin" />
+        <h3>Blueberry Muffin</h3>
+        <p>₹180</p>
+        <button onclick="addToCart('Blueberry Muffin', 180)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=60" alt="Red Velvet Slice" />
+        <h3>Red Velvet Slice</h3>
+        <p>₹200</p>
+        <button onclick="addToCart('Red Velvet Slice', 200)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say 💬</h2>
+    <div class="testimonial-container">
+      <div class="testimonial active">
+        <p>“The chocolate cake was heavenly! Soft, rich, and beautifully decorated.”</p>
+        <h4>- Priya S.</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Absolutely love their cupcakes — perfect sweetness and so pretty 😍.”</p>
+        <h4>- Rahul K.</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Butter Mellow never disappoints. My go-to bakery for every celebration!”</p>
+        <h4>- Aishwarya D.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Butter Mellow Bakery | Made with 🍰 & 💖</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
